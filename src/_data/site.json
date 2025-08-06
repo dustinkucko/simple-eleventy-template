@@ -1,0 +1,13 @@
+{
+  "name": "Eleventy Service",
+  "description": "Modern service business delivering exceptional solutions",
+  "url": "https://example.com",
+  "author": {
+    "name": "Your Name",
+    "email": "hello@example.com"
+  },
+  "social": {
+    "twitter": "@example",
+    "linkedin": "company/example"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "simple-eleventy-template",
+  "version": "1.0.0",
+  "description": "A clean, minimal static site template built with Eleventy and Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve --watch",
+    "start": "npm run dev",
+    "clean": "rm -rf _site"
+  },
+  "keywords": ["eleventy", "static-site", "landing-page"],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.11"
+  }
+}

@@ -1,0 +1,71 @@
+<footer class="bg-gray-50 border-t border-gray-200">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Company Info -->
+      <div class="space-y-4">
+        <div class="flex items-center space-x-2">
+          <i data-lucide="zap" class="h-6 w-6 text-primary-500"></i>
+          <span class="text-xl font-bold text-gray-900">{{ site.name }}</span>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          {{ site.description }}
+        </p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="space-y-4">
+        <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider">
+          Quick Links
+        </h3>
+        <nav class="space-y-2">
+          <a href="#services" class="block text-gray-600 hover:text-gray-900 text-sm transition-colors duration-200">
+            Services
+          </a>
+          <a href="#about" class="block text-gray-600 hover:text-gray-900 text-sm transition-colors duration-200">
+            About
+          </a>
+          <a href="#experience" class="block text-gray-600 hover:text-gray-900 text-sm transition-colors duration-200">
+            Experience
+          </a>
+        </nav>
+      </div>
+      
+      <!-- Social Links -->
+      <div class="space-y-4">
+        <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider">
+          Connect
+        </h3>
+        <div class="flex space-x-4">
+          <a 
+            href="https://twitter.com/{{ site.social.twitter | remove: '@' }}" 
+            class="text-gray-400 hover:text-gray-600 transition-colors duration-200"
+            aria-label="Follow us on Twitter"
+          >
+            <i data-lucide="twitter" class="h-5 w-5"></i>
+          </a>
+          <a 
+            href="https://linkedin.com/{{ site.social.linkedin }}" 
+            class="text-gray-400 hover:text-gray-600 transition-colors duration-200"
+            aria-label="Connect on LinkedIn"
+          >
+            <i data-lucide="linkedin" class="h-5 w-5"></i>
+          </a>
+          <a 
+            href="mailto:{{ site.author.email }}" 
+            class="text-gray-400 hover:text-gray-600 transition-colors duration-200"
+            aria-label="Send us an email"
+          >
+            <i data-lucide="mail" class="h-5 w-5"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Copyright -->
+    <div class="mt-8 pt-8 border-t border-gray-200">
+      <p class="text-center text-gray-500 text-sm">
+        &copy; {{ "now" | date: "%Y" }} {{ site.name }}. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
